@@ -36,7 +36,7 @@ interface TwoColumnLayoutProps {
 
 const TwoColumnLayout: React.FC<TwoColumnLayoutProps> = ({ content, imageUrl, imageAlt }) => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 p-20">
       <div className="flex flex-col md:flex-row gap-x-8 items-center justify-center">
         <div className="w-full md:w-1/2 p-2 flex items-center justify-center">
           {content}

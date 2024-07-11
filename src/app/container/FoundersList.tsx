@@ -23,7 +23,7 @@ import FounderCard from './FounderCard';
 
 const FoundersList: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-5">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-20">
       {FOUNDER_DEMO.map((founder) => (
         <FounderCard key={founder.id} {...founder} />
       ))}

@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const WhoWeAreComponent: React.FC = () => {
   return (
-    <div className="flex flex-wrap items-center justify-center">
+    <div className="flex flex-wrap items-center justify-center p-20">
       {/* Left Column (Content) */}
       <div className="w-full md:w-1/2 px-4">
         <h2 className="text-2xl font-bold mb-4">

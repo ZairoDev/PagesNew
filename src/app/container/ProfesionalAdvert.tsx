@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const AdvertComponent: React.FC = () => {
   return (
-    <div className="flex flex-wrap items-center justify-center">
+    <div className="flex flex-wrap items-center justify-center p-20">
       {/* Left Column (Image) */}
       <div className="w-full md:w-1/2 px-4">
         <Image src="/images/About_us_midle.png" alt="Advert Image" width={500} height={300} />
@@ -11,7 +11,7 @@ const AdvertComponent: React.FC = () => {
 
       {/* Right Column (Content) */}
       <div className="w-full md:w-1/2 px-4">
-        <h2 className="text-2xl font-bold mb-4">
+        <h2 className="text-2xl font-mono mb-4">
           Get Expert Tips on Listing a Professional Advert
         </h2>
         <p className="text-lg leading-relaxed">

@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const HeroGlobal: React.FC = () => {
   return (
-    <div className="flex flex-wrap items-center justify-center">
+    <div className="flex flex-wrap items-center justify-center p-20">
       {/* Left Column (Image) */}
       <div className="w-full md:w-1/2 px-4">
         <Image src="/images/Map_View.gif" alt="Advert Image" width={500} height={300} />

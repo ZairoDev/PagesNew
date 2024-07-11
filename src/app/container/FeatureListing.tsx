@@ -18,7 +18,7 @@ const Heading: React.FC<HeadingProps> = ({ desc, children }) => {
 
 const FeatureListing: React.FC = () => {
   return (
-    <div className="flex flex-col items-start p-4 bg-white shadow-lg rounded-lg mx-2 md:mx-4 lg:mx-8">
+    <div className="flex flex-col items-start p-20 bg-white shadow-lg rounded-lg mx-2 md:mx-4 lg:mx-8 ">
       <Heading desc="We’re impartial and independent, and every day we create distinctive, world-class programmes and content">
         ⛱ Get tons of unique features for your Listing.
       </Heading>
