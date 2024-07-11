@@ -4,6 +4,8 @@ import FeatureListing from './container/FeatureListing';
 import FoundersList from './container/FoundersList';
 import ProfesionalAdvert from './container/ProfesionalAdvert';
 import WhoWeAreComponent from './container/WhoWeAre';
+import HeroGlobal from './container/HeroGlobal';
+
 
 const Home: NextPage = () => {
   const content = (
@@ -24,6 +26,7 @@ const Home: NextPage = () => {
       <FoundersList/>
       <ProfesionalAdvert/>
       <WhoWeAreComponent/>
+      <HeroGlobal/>
     </>
   );
 };
