@@ -1,3 +1,4 @@
+// "use client";
 // import React, { ButtonHTMLAttributes, FC, ReactNode } from "react";
 // import Link from "next/link";
 // import twFocusClass from "@/app/utils/twFocusClass";
@@ -7,14 +8,13 @@
 //   translate?: string;
 //   sizeClass?: string;
 //   fontSize?: string;
-//   //
 //   loading?: boolean;
 //   disabled?: boolean;
 //   type?: ButtonHTMLAttributes<HTMLButtonElement>["type"];
 //   href?: string | URL;
 //   targetBlank?: boolean;
 //   onClick?: () => void;
-//   children?: ReactNode; // Added children prop
+//   children?: ReactNode;
 // }
 
 // const Button: FC<ButtonProps> = ({
@@ -56,14 +56,25 @@
 //   );
 
 //   if (href) {
-//     return (
-//       <Link href={href} passHref>
+//     if (targetBlank) {
+//       return (
 //         <a
-//           target={targetBlank ? "_blank" : undefined}
+//           href={href.toString()}
 //           className={CLASSES}
 //           onClick={onClick}
-//           rel={targetBlank ? "noopener noreferrer" : undefined}
+//           target="_blank"
+//           rel="noopener noreferrer"
 //         >
+//           {loading && _renderLoading()}
+//           {children || "This is Link"}
+//         </a>
+//       );
+//     }
+
+//     return (
+//       <Link href={href.toString()} passHref>
+//         <a className={CLASSES} onClick={onClick}>
+//           {loading && _renderLoading()}
 //           {children || "This is Link"}
 //         </a>
 //       </Link>
@@ -160,7 +171,7 @@ const Button: FC<ButtonProps> = ({
     }
 
     return (
-      <Link href={href} passHref>
+      <Link href={href.toString()} passHref>
         <a className={CLASSES} onClick={onClick}>
           {loading && _renderLoading()}
           {children || "This is Link"}

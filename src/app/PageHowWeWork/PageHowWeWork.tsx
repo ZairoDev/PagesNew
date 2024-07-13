@@ -46,7 +46,7 @@ const PageHowWeWork: FC<PageAboutProps> = ({ className = "" }) => {
             btnText="Discover More"
           />
         </div>
-        {/* <SectionFounder /> */}
+        <SectionFounder />
 
         <SectionHero2
           leftimg={middleimg1}
